@@ -2,11 +2,45 @@ body {
     font-family: 'Roboto', sans-serif;
     color: black;
 }
+h1,
+h2,
+h3,
+p {
+    margin:0;
+}
+ul {
+    margin: 0;
+    padding-left: 0;
+}
 .link {
     text-decoration: none;
 }
 .list {
     list-style: none;
+}
+.visually-hidden {
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    margin: -1px;
+  }
+.container {
+    width: 100%;
+max-width: 1200px;
+margin-left: auto;
+margin-right: auto;
+padding-left: 15px;
+padding-right: 15px;
+}
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 :root {
     --brand-color: #2196F3;
@@ -21,9 +55,27 @@ font-size: 26px;
 line-height: 1.19;
 letter-spacing: 0.03em;
 color: black;
+padding: 24 93 25 215;
 }
 .web {
 color: var(--brand-color);
+}
+.header-logo {
+    padding-top: 24px;
+    padding-bottom: 25px;
+    margin-right: 93px;
+}
+.navigator-menu {
+    padding: 32 0;
+}
+.navigator-item {
+    margin-right: 50px;
+}
+.header-contacts-list {
+    padding: 32 0;
+}
+.header-contacts-item {
+    margin-right: 50px;
 }
 .navigator-link {
     font-weight: 500;
@@ -62,34 +114,27 @@ text-align: center;
 letter-spacing: 0.06em;
 text-transform: uppercase;
 color: #FFFFFF;
+width: 696px;
+margin-bottom: 30px;
 }
 .hero-btn {
     background: var(--brand-color);
 box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 border-radius: 4px;
+border: 0;
 cursor: pointer;
-}
-.hero-btn-text {
-    font-weight: 700;
+font-weight: 700;
 font-size: 16px;
 line-height: 1.87;
 align-items: center;
 text-align: center;
 letter-spacing: 0.06em;
 color: #FFFFFF;
+padding: 10px 32px;
 }
 /* character */
-.character-title-h2 {
-    position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
+.character-item {
+    margin-right: 30px;
 }
 .character-title {
     font-weight: 700;
@@ -98,6 +143,7 @@ line-height: 1.14;
 letter-spacing: 0.03em;
 text-transform: uppercase;
 color: #212121;
+margin-bottom: 10px;
 }
 .character-text {
     font-size: 14px;
@@ -113,8 +159,18 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 50px;
+}
+.work-item {
+    margin-right: 30px;
 }
 /* team */
+.team {
+    background-color: #F5F4FA;
+}
+.team-item {
+    margin-right: 30px;
+}
 .team-title-h2 {
     font-weight: 700;
 font-size: 36px;
@@ -122,6 +178,7 @@ line-height: 1.16;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-bottom: 50px;
 }
 .team-title {
     font-weight: 500;
@@ -130,6 +187,8 @@ line-height: 1.18;
 text-align: center;
 letter-spacing: 0.03em;
 color: #212121;
+margin-top: 30px;
+margin-bottom: 10px;
 }
 .team-text {
     font-size: 16px;
@@ -139,18 +198,6 @@ letter-spacing: 0.03em;
 color: var(--text-color);
 }
 /* partfolio btn */
-.example-work-title {
-    position: absolute;
-  white-space: nowrap;
-  width: 1px;
-  height: 1px;
-  overflow: hidden;
-  border: 0;
-  padding: 0;
-  clip: rect(0 0 0 0);
-  clip-path: inset(50%);
-  margin: -1px;
-}
 .btn-btn {
 font-family: 'Roboto';
 font-style: normal;
@@ -191,6 +238,16 @@ color: var(--text-color);
 }
 .studio {
     color: #FFFFFF;
+}
+.footer-logo {
+    padding-top: 60px;
+    margin-bottom: 20px;
+}
+.footer-adress-item {
+    margin-bottom: 9px;
+}
+.footer-contacts-item {
+    padding-bottom: 9px;
 }
 .footer-adress-link {
     font-size: 14px;
