@@ -280,6 +280,8 @@ padding-left: 24px;
 /* footer */
 .footer {
     background-color: var(--background-color);
+}
+.footer-container {
     height: 252px;
 }
 .studio {
