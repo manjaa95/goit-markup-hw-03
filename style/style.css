@@ -294,6 +294,7 @@ padding-left: 24px; */
 /* footer */
 .footer {
     background-color: var(--background-color);
+    padding-top: 60px;
 }
 .footer-container {
     height: 252px;
@@ -302,7 +303,6 @@ padding-left: 24px; */
     color: #FFFFFF;
 }
 .footer-logo {
-padding-top: 60px;
 margin-bottom: 20px;
 }
 .footer-adress-item {
